@@ -21,7 +21,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/movies', movieRoutes);
 app.use('/api/user', userRoutes);
-app.use('/api/user', require('./routes/userRoutes'));
+app.use('/api/reviews', review);
 app.use('/api/reviews', require('./routes/reviewRoutes'));
 
 

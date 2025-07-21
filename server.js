@@ -1,13 +1,7 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import mongoose from 'mongoose';
-import cors from 'cors';
-
-import connectDB from './config/db.js';
-import authRoutes from './routes/authRoutes.js';
-import movieRoutes from './routes/movieRoutes.js';
-import userRoutes from './routes/userRoutes.js';
-
+const authRoutes =require('./routes/authRoutes')
+const express = require("express")
+const dotenv = require("dotenv")
+const cors = require("cors")
 dotenv.config();
 
 const app = express();

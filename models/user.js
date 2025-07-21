@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true },
@@ -8,4 +8,5 @@ const userSchema = new mongoose.Schema({
   watchlist: [{ type: Number }],
 }, { timestamps: true });
 
-export default mongoose.model('User', userSchema);
+module.export = mongoose.model('User', userSchema);
+ 
